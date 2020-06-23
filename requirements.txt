@@ -5,7 +5,6 @@ attrs==19.3.0
 Automat==20.2.0
 backcall==0.1.0
 black==19.10b0
-bleach==3.1.0
 certifi==2019.11.28
 cffi==1.14.0
 chardet==3.0.4
@@ -17,7 +16,6 @@ cssselect==1.1.0
 cycler==0.10.0
 decorator==4.4.1
 defusedxml==0.6.0
-Django==3.0
 djangorestframework==3.11.0
 entrypoints==0.3
 flake8==3.7.9
@@ -35,16 +33,6 @@ jedi==0.15.1
 Jinja2==2.10.3
 json5==0.8.5
 jsonschema==3.1.1
-jupyter-client==5.3.4
-jupyter-contrib-core==0.3.3
-jupyter-contrib-nbextensions==0.5.1
-jupyter-core==4.6.1
-jupyter-highlight-selected-word==0.2.0
-jupyter-latex-envs==1.4.6
-jupyter-nbextensions-configurator==0.4.1
-jupyterlab==1.2.2
-jupyterlab-server==1.0.6
-jupyterthemes==0.20.0
 kiwisolver==1.1.0
 lazy-object-proxy==1.4.3
 lesscpy==0.13.0
@@ -103,7 +91,6 @@ testpath==0.4.4
 toml==0.10.1
 tornado==6.0.3
 traitlets==4.3.3
-Twisted==19.10.0
 typed-ast==1.4.0
 urllib3==1.25.8
 w3lib==1.21.0

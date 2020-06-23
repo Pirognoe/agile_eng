@@ -15,7 +15,10 @@ origin_page_soup = BeautifulSoup(origin_page.text, features="lxml")
 other_page_soup = BeautifulSoup(other_page.text, features="lxml")
 
 button_origin_search_result_list = origin_page_soup.find_all('a', attrs={"class": "btn btn-success", "onclick": True})
-button_other_search_result_list = other_page_soup.find_all('a', attrs={"class": "btn btn-success", "onclick": True})
+button_other_search_result_list = other_page_soup.find_all('a',
+                                                           attrs={"class": "btn btn-success",
+                                                                  # The btn test-link-ok class is pretty doubtful
+                                                                  "class": "btn test-link-ok", "onclick": True}, )
 
 
 def xpath_builder(search_results_tags):

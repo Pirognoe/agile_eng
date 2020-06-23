@@ -28,8 +28,16 @@ other_page_soup_3 = BeautifulSoup(other_page_3.text, features="lxml")
 other_page_soup_4 = BeautifulSoup(other_page_4.text, features="lxml")
 
 
-print(origin_page_soup.find_all('a', attrs={"class": "btn btn-success"}))
-print(other_page_soup_1.find_all('a', attrs={"class": "btn btn-success"}))
-print(other_page_soup_2.find_all('a', attrs={"class": "btn test-link-ok"}))
-print(other_page_soup_3.find_all('a', attrs={"class": "btn btn-success"}))
-print(other_page_soup_4.find_all('a', attrs={"class": "btn btn-success"}))
+print(origin_page_soup.find_all('a', attrs={"class": "btn btn-success", "onclick": True}))
+print(other_page_soup_1.find_all('a', attrs={"class": "btn btn-success", "onclick": True},))
+print(other_page_soup_2.find_all('a', attrs={"class": 'btn test-link-ok', "onclick": True}))
+print(other_page_soup_3.find_all('a', attrs={"class": "btn btn-success", "onclick": True}))
+print(other_page_soup_4.find_all('a', attrs={"class": "btn btn-success", "onclick": True}))
+
+
+for item in other_page_soup_4.find_all('a', attrs={"class": "btn btn-success", "onclick": True}):
+    xpath =[]
+    for parent in item.parents:
+        xpath.append(parent.name)
+    xpath.reverse()
+    print("/".join(xpath[1:], ))

@@ -1,7 +1,8 @@
 # agile_eng
 Test task for Agile Engine 
 
-Run script from your CLI as:
+
+## Run script from your CLI as:
 <platform> <program_path> <input_origin_file_path> <input_other_sample_file_path> 
 for example:
 ----------
